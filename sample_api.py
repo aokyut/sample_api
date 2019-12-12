@@ -11,4 +11,8 @@ def post_json():
 
     return src_path
 
+@app.route("/",methods=["GET"])
+def get():
+    return "Hello"
+
 app.run(port=3001)
