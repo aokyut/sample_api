@@ -15,4 +15,4 @@ def post_json():
 def get():
     return "Hello"
 
-app.run(port=3001)
+app.run(host="0.0.0.0",port=3001)
