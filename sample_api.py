@@ -13,6 +13,8 @@ def post_json():
 
 @app.route("/",methods=["GET"])
 def get():
+    with open("log","w") as f:
+        f.write("access")
     return "Hello"
 
 app.run(host="0.0.0.0",port=3001)
