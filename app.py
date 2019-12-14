@@ -15,8 +15,6 @@ def post_json():
 
 @app.route("/",methods=["GET"])
 def get():
-    with open("log","w") as f:
-        f.write("access")
     return "Hello"
 
 if __name__=="__main__":
